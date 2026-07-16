@@ -75,7 +75,7 @@ teksti = f"Bakteeripopulaatio (k = {k:.2f}, y_0 = {y_0[0]:d})"
 plt.plot(tulos.t, tulos.y[0], color = 'red', label = teksti)
 plt.xlim(0, max_t)
 plt.ylim(0.0, 20000)
-plt.xticks(np.linspace(0.0, 4.0, num = 9))
+plt.xticks(np.linspace(0.0, 4.0, 9))
 plt.yticks(np.arange(0, 20001, 2000))
 plt.xlabel('t (h)')
 plt.ylabel('Bakteeripopulaatio')
