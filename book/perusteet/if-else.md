@@ -62,6 +62,25 @@ Anna kokonaisluku:
 > -222
 Antamasi luku on pienempi kuin nolla
 ```
+
+Esimerkki, jossa selvitetään kokonaislukujen jaollisuutta jakojäännösoperaattorin `%` avulla:
+```{code-cell} ipython3
+luku = int(input("Anna kokonaisluku:\n"))
+jakaja = int(input("Anna jakaja (kokonaisluku):\n"))
+if luku % jakaja == 0:
+    print("Luku", luku, "on jaollinen luvulla", jakaja)
+else:
+    print("Luku", luku, "ei ole jaollinen luvulla", jakaja)
+```
+Esimerkkisuoritus:
+```
+Anna kokonaisluku:
+> 48
+Anna jakaja (kokonaisluku) :
+> 8
+Luku 48 on jaollinen luvulla 8
+```
+
 if-ehtolauseita voi olla useita sisäkkäin. Huomaa sisennysten käyttö tässä esimerkkiohjelmassa:
 ``` ipython3
 luku = int(input("Anna kokonaisluku:\n"))
@@ -85,6 +104,7 @@ Se on kuitenkin enintään 1000
 :class: tip
 Ensimmäinen ehto `luku >= 0` siis toteutui, mutta ensimmäisen ehtolauseen sisällä oleva ehto `luku > 0` ei toteutunut.
 :::
+
 ## if-elif-else
 Ehtolauseeseen voi myös lisätä mielivaltaisen määrän lisäehtoja elif-käskyllä:
 ``` ipython3
