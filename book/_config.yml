@@ -1,5 +1,6 @@
 # This config includes an opinionated list of configuration options of TeachBooks, Jupyterbook v1, Sphinx and other extensions part of TeachBooks-Favourites.
 
+title: Kemiantekniikan ohjelmointikurssi
 author: Antti Karttunen and collaborators, built with <a href="https://teachbooks.io">TeachBooks</a>
                                                      # Replace TeachBooks Teams with your own name in the line above, configuration part of JupyterBook: https://jupyterbook.org/en/stable/customize/config.html
 execute:
