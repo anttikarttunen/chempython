@@ -38,13 +38,7 @@ Merkkijonon (string) saa kertoa kokonaisluvulla (int):
 ```{code-cell} ipython3
 print("tip tap " * 5)
 ```
-## Kokonaislukujen jaollisuuden testaaminen
-Jakojäännösoperaattorilla on kätevä testata kokonaislukujen jaollisuutta:
-```{code-cell} ipython3
-luku = 6
-if luku % 3 == 0:
-    print("Luku on kolmella jaollinen")
-```
+
 ## Lyhennetyt laskuoperaatiot
 Pythonissa voi käyttää myös lyhennettyjä laskuoperaatioita `+=`, `-=`, `*=` ja `/=`
 ``` ipython3
