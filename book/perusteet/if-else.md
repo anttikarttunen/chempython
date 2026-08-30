@@ -64,7 +64,7 @@ Antamasi luku on pienempi kuin nolla
 ```
 
 Esimerkki, jossa selvitetään kokonaislukujen jaollisuutta jakojäännösoperaattorin `%` avulla:
-```{code-cell} ipython3
+``` ipython3
 luku = int(input("Anna kokonaisluku:\n"))
 jakaja = int(input("Anna jakaja (kokonaisluku):\n"))
 if luku % jakaja == 0:
@@ -102,7 +102,7 @@ Se on kuitenkin enintään 1000
 ```
 :::{admonition} Vinkki
 :class: tip
-Ensimmäinen ehto `luku >= 0` siis toteutui, mutta ensimmäisen ehtolauseen sisällä oleva ehto `luku > 0` ei toteutunut.
+Ensimmäinen ehto `luku >= 0` siis toteutui, mutta ensimmäisen ehtolauseen sisällä oleva ehto `luku > 1000` ei toteutunut.
 :::
 
 ## if-elif-else
