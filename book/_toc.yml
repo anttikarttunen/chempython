@@ -94,7 +94,3 @@ parts:
     - file: lisamateriaali/main-funktio.md
     - file: lisamateriaali/verkko-mat.md
     - file: lisamateriaali/vaihtoehdot.md
-  - caption: Muuta
-    chapters:
-    - file: changelog.md
-    - file: credits.md
