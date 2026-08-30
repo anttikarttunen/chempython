@@ -13,6 +13,7 @@ kernelspec:
 
 # Johdanto
 Käydään ensin läpi yleisiä tietoja oppimateriaalista ja ohjelmointitehtävien tekemisestä.
+
 ## 1. Spyder-ohjelmointiympäristön asentaminen
 Ohjelmointitehtävien tekemiseksi tarvitset esimerkiksi Spyder-ohjelmointiympäristön, joka sisältää myös Python-kehitysympäristön. Oppimateriaalin Lisämateriaali-luku sisältää [Spyderin asennusohjeen](lisamateriaali/spyder-asennus.md) ja [Spyderin käyttöohjeita](lisamateriaali/spyder-kaytto.md).
 
@@ -22,7 +23,7 @@ Kun oppimateriaalissa esitetään Python-koodia, se näyttää tältä:
 print("Nyt lasketaan!")
 print("11*11 on", 11*11)
 ```
-Kun oppimateriaalissa näytetään, mitä Python-koodi tulostaa, sen voi kokeilla itse "ajamalla" koodin koodilaatikon alareunan `run`-painikkeesta. Tällöin Live Code, eli interaktiivinen koodausominaisuus, on päällä ja koodilaatikoiden alareunassa on painikkeet `run`, `run all`, `add cell` ja `clear`. Koodia voi myös editoida suoraan koodilaatikossa tai lisätä uuden tyhjän koodilaatikon alle `add cell` -painikkeesta. Tekemäsi muutokset eivät tallennu kirjaan. 
+Osan oppimateriaalin koodiesimerkeistä voi ajaa suoraan selaimessa painamalla koodin alapuolella olevaa `run`-painiketta. Koodia voi myös muokata suoraan koodilaatikossa tai voit halutessasi lisätä uuden tyhjän koodilaatikon `add cell` -painikkeesta. Tekemäsi muutokset eivät tallennu oppimateriaaliin. 
 
 Kokeile ajamista alla olevalla koodilla.
 ```{code-cell} ipython3
@@ -30,16 +31,17 @@ Kokeile ajamista alla olevalla koodilla.
 print("Nyt lasketaan!")
 print("11*11 on", 11*11)
 ```
-Välillä koodin tulostus voidaan näyttää laatikossa itse koodin alapuolella. Esimerkiksi:
+Välillä koodin tulostus näytetään laatikossa heti koodin alapuolella. Esimerkiksi koodi:
 ```ipython3
 print("Nyt lasketaan!")
 print("11*11 on", 11*11)
 ```
-Tulostus:
+tulostaisi seuraavat rivit:
 ```
 Nyt lasketaan!
 11*11 on 121!
 ```
+
 ## 3. Oppimateriaalin esimerkkiohjelmien kokeileminen itse
 - Kopioi esimerkkiohjelman koodi Spyder-editoriin.
 - Aja koodi painamalla Spyderissä vihreää "Run"-painiketta tai F5-nappia.
@@ -54,7 +56,7 @@ Ohjelmien huolellinen kommentointi on ensiarvoisen tärkeää, jotta:
 - muut ymmärtävät, mitä kirjoittamasi koodi tekee
 - muistat itse, mitä kirjoittamasi koodi tekee!
 
-Ohjelmakoodiin voi lisätä kommentteja #-merkin jälkeen:
+Ohjelmakoodiin voi lisätä kommentteja `#`-merkin jälkeen:
 ```{code-cell} ipython3
 #Aloitetaan!
 print("Eka ohjelmani")
