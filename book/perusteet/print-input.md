@@ -20,7 +20,7 @@ Pythonissa voi tulostaa tietoa ruudulle *print*-funktiolla:
 print("Terve!")
 ```
 ````{admonition} Funktiot
-:class: note dropdown
+:class: note
 Funktioiden toimintaperiaatteisiin perehdymme tarkemmin oppimateriaalin luvussa *Funktiot ja moduulit*. Nyt ensimmäisessa luvussa hyödynnämme vain muutamia Pythonin sisäänrakennettuja funktioita, joiden käyttö on yhtä suoraviivaista kuin print-funktion käyttö.
 ````
 
@@ -39,29 +39,31 @@ Käyttäjältä voi kysyä tietoja **input**-funktiolla:
 nimi = input("Mikä nimesi on?")
 print("Hieno nimi sinulla", nimi)
 ```
-Kun oppimateriaalissa näytetään, mitä input-funktiolle annetaan syötteenä, käytetään ">"-merkkiä. Ylempi esimerkki syötteessä: (voit myös kokeilla Spyderissä kopioimalla yllä olevan koodin)
+Jos kopioit yllä olevan koodin Spyderiin ja ajat sen, Spyder odottaa sinun vastaavan kysymykseen oikean alareunan konsoliruudussa. Esimerkkituloste käyttäisi tältä (käyttäjä syöttää vastauksen `Marsu`):
 ```
-Mikä nimesi on?> Marsu
+Mikä nimesi on?Marsu
 Hieno nimi sinulla Marsu
 ```
 :::{admonition} Huom!
 :class: note
 Esimerkissä siis *input*-funktiolla kysytään käyttäjältä nimeä ja käyttäjän antama merkkijono tallennetaan **muuttujaan** *nimi*. Sen jälkeen muuttujan arvo voidaan tulostaa *print*-funktion avulla. Muuttujiin voidaan säilöä tietoa ja niistä kerrotaan lisää seuraavassa luvussa.
 :::
-Kysymys ja vastaus tulostuvat selkeämmin, jos lisätään välilyönti merkkijonon loppuun:
+Kysymys ja vastaus tulostuvat hieman selkeämmin, jos lisätään välilyönti merkkijonon loppuun:
 ```ipython3
 nimi = input("Mikä nimesi on? ")
 print("Hieno nimi sinulla", nimi)
 ```
+Käyttäjä vastaa kysymykseen jälleen `Marsu` (huomaa, miten kysymysmerkin jälkeen on nyt välilyönti):
 ```
-Mikä nimesi on? > Marsu
+Mikä nimesi on? Marsu
 Hieno nimi sinulla Marsu
 ```
-Kaikkein selkeintä on yleensä käyttää rivinvaihtoa "\n" kysymyksen lopussa
+Kaikkein selkeintä on yleensä käyttää rivinvaihtoa `\n` kysymyksen lopussa
 ``` ipython3
 nimi = input("Mikä nimesi on?\n")
 print("Hieno nimi sinulla", nimi)
 ```
+Tästä lähtien  oppimateriaalissa käytetään `>`-merkkiä, kun näytetään, mitä käyttäjä antaa syötteenä input-funktiolle:
 ```
 Mikä nimesi on?
 > Marsu
@@ -73,6 +75,7 @@ nimi = input("Mikä nimesi on?\n")
 kaveri = input("Mikä kaverisi nimi on?\n")
 print("Mukava tavata", nimi, "ja", kaveri)
 ```
+Käyttäjä vastaa kysymyksiin `Marsu` ja `Jomppa`:
 ```
 Mikä nimesi on?
 > Marsu
