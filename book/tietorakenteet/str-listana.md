@@ -36,6 +36,8 @@ teksti = "Sc Ti V Cr Mn Co Fe Ni Cu Zn"
 alkuaineet = teksti.split()
 print(alkuaineet)
 ```
+*str.split*-funktiota tarvitaan usein, kun halutaan muuttaa tekstimuodossa olevaa dataa numeroiksi, joita halutaan analysoida. Tekstimuotoinen data voi olla peräisin esimerkiksi tiedostosta tai tietokannasta, johon tiedot on alun perin tallennettu tekstimuodossa.
+
 *str.split*-funktiolla luodun listan voi käydä läpi *for*-silmukalla:
 ```{code-cell} ipython3
 def laske_nollat_ja_keskiarvo(teksti):
