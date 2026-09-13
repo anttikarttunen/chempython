@@ -19,7 +19,7 @@ Käytännössähän kyse on samasta suoran yhtälön sovituksesta, mitä olemme 
 
 ## Esimerkki
 Tutustutaan *linregress*-funktioon esimerkin avulla. Meillä on käytössämme tiedosto 
-[T-p-data.txt](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/scipy/T-p-data.txt), 
+[T-p-data.txt](./T-p-data.txt), 
 jossa on esitetty painelämpötilan funktiona kaasumaiselle yhdisteelle (*n* = 0.65 mol). Mittausolosuhteet ovat sellaiset, 
 että voimme odottaa ideaalikaasulain olevan voimassa. Tehtävänä on ratkaista astian tilavuus *V*.  
 - *pV = nRT*, joten *p = nRT / V*
