@@ -16,6 +16,7 @@ Aiemmin tutustuimme sisäkkäisiin listoihin. Myös sanakirjoista voi rakentaa s
 ## Sanakirja, jonka jokainen arvo on toinen sanakirja
 Tässä esimerkissä sanakirjan avain on yhdisteen kemiallinen kaava ja sanakirjan arvo on toinen sanakirja, joka sisältää yhdisteen moolimassan ja tiheyden.
 ```{code-cell} ipython3
+:tags: ["auto-execute-page"]
 tietokanta = {
               "C2H6": {"moolimassa": 30.07, "tiheys": 1.36},
               "NaCl": {"moolimassa": 58.44, "tiheys": 2.16}
