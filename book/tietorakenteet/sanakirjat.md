@@ -119,20 +119,8 @@ print(sorted(atomipainot.values()))
 Huomaa kuitenkin, että alkuperäisen sanakirjan (*atomipainot*) järjestys ei muutu, vaikka kutsuisit *sorted*-funktiota.
 :::{admonition} Huom!
 :class: note
-Ennen Pythonin versiota 3.6, sanakirjan **avain:arvo** parit olivat satunnaisessa järjestyksessä. Versiosta 3.6 eteenpäin
-ne ovat siinä järjestyksessä, missä ne on lisätty sanakirjaan.
+Pythonin versiosta 3.6 alkaen sanakirjan **avain:arvo** parit ovat oletuksena siinä järjestyksessä, missä ne on lisätty sanakirjaan.
 :::
-## Listat sanakirjojen sisällä
-Sanakirjan arvot voivat olla vaikka listoja:
-```{code-cell} ipython3
-# Sanakirjan arvot voivat olla vaikka listoja:
-yhdisteet = {"C2H6": ["C",  2,  "H", 6],
-             "NaCl": ["Na", 1, "Cl", 1]
-          # indeksi:   0    1    2   3
-            }
-print(yhdisteet["C2H6"])
-print("Yhdisteessa C2H6 on", yhdisteet["C2H6"][3], "vetyatomia")
-```
 ### Tehtävä
 Täydennä alla oleva koodi ohjeiden mukaisesti
 ```{code-cell} ipython3
