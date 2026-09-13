@@ -37,8 +37,8 @@ def ratkaise_ainemaara(p, V, T):
 def ratkaise_lampotila(p, V, n):
     return p * V / (n * R)
 ```
-Luodaan moduulin [*ideaalikaasu.py*](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/funktiot/ideaalikaasu.py) kanssa samaan hakemistoon tiedosto 
-[*testi.py*](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/funktiot/testi.py), jossa hyödynnämme *ideaalikaasu*-moduulia **import**-avainsanan avulla:
+Luodaan moduulin [*ideaalikaasu.py*](./ideaalikaasu.py) kanssa samaan hakemistoon tiedosto 
+[*testi.py*](./testi.py), jossa hyödynnämme *ideaalikaasu*-moduulia **import**-avainsanan avulla:
 ```{code-cell} ipython3
 :tags: ["auto-execute-page"]
 # Tuodaan koko ideaalikaasu-moduuli ohjelman testi.py käyttöön
@@ -47,7 +47,7 @@ import ideaalikaasu
 p = ideaalikaasu.ratkaise_paine(0.002, 0.01, 300) # Parametrit V, n, T
 print(f"Paine: {p:.3f} Pa")
 ```
-Toinen tapa on tuoda *ideaalikaasu*-moduulista vain tietyt funktiot ja muuttujat [*testi.py*](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/funktiot/testi.py)-ohjelman
+Toinen tapa on tuoda *ideaalikaasu*-moduulista vain tietyt funktiot ja muuttujat [*testi.py*](./testi.py)-ohjelman
 käyttöön. Tähän käytetään käskyä **from** MODUULI **import** FUNKTIOT
 ```{code-cell} ipython3
 # Tuodaan tietyt funktiot (ja/tai muuttujat) ohjelman testi.py käyttöön
