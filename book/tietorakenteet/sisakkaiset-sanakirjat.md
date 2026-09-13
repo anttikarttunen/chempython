@@ -9,10 +9,12 @@ kernelspec:
   language: python
   name: python3
 ---
+# Sisäkkäiset sanakirjat
+
 Aiemmin tutustuimme sisäkkäisiin listoihin. Myös sanakirjoista voi rakentaa sisäkkäisiä tietorakenteita. Sanakirjoihin voi säilöä esimerkiksi toisia sanakirjoja tai listoja.
 
-## Sisäkkäiset sanakirjat
-Sanakirjoja voi laittaa sisäkkäin:
+## Sanakirja, jonka jokainen arvo on toinen sanakirja
+Tässä esimerkissä sanakirjan avain on yhdisteen kemiallinen kaava ja sanakirjan arvo on toinen sanakirja, joka sisältää yhdisteen moolimassan ja tiheyden.
 ```{code-cell} ipython3
 tietokanta = {
               "C2H6": {"moolimassa": 30.07, "tiheys": 1.36},
