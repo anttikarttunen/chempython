@@ -40,10 +40,11 @@ parts:
       - file: tietorakenteet/listat.md
       - file: tietorakenteet/listan-kasittely.md
       - file: tietorakenteet/lapikaynti.md
-      - file: tietorakenteet/monikot.md
-      - file: tietorakenteet/sanakirjat.md
-      - file: tietorakenteet/sisakkaiset.md
+      - file: tietorakenteet/monikot.md      
+      - file: tietorakenteet/sisakkaiset-listat.md      
       - file: tietorakenteet/str-listana.md
+      - file: tietorakenteet/sanakirjat.md
+      - file: tietorakenteet/sisakkaiset-sanakirjat.md      
       - file: tietorakenteet/tieto-kert.md
     - file: numpy/numpy-intro.md
       sections:
