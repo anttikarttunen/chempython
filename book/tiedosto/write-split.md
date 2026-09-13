@@ -96,7 +96,7 @@ for rivi in tiedosto:
 tiedosto.close()
 ```
 ## Numeroarvojen lukeminen tiedostosta
-Meilä on käytössämme datatiedosto [moolimassat.txt](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/tiedosto/moolimassat.txt), 
+Meilä on käytössämme datatiedosto [moolimassat.txt](./moolimassat.txt), 
 joka sisältää kullakin rivillä yhdisteen nimen, moolimassan (g/mol) ja massan (g) välilyönneillä erotettuna. 
 Tiedoston kaksi ensimmäistä riviä näyttävät tältä:
 ``` ipython3
@@ -119,7 +119,7 @@ for rivi in tiedosto:
 tiedosto.close()
 ```
 ## Toinen esimerkki numeroarvojen lukemisesta
-Meillä on käytössämme datatiedosto [temps.txt](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/tiedosto/temps.txt), joka sisältää kullakin rivillä alkuaineen
+Meillä on käytössämme datatiedosto [temps.txt](./temps.txt), joka sisältää kullakin rivillä alkuaineen
 symbolin, nimen, sulamispisteen (°C) ja kiehumispisteen (°C). Tiedoston kaksi ensimmäistä riviä näyttävät tältä:
 ``` ipython3
 Sc, skandium   , 1541.0 ,2830
