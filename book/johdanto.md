@@ -43,6 +43,9 @@ Nyt lasketaan!
 ```
 
 ## 3. Oppimateriaalin esimerkkiohjelmien kokeileminen itse
+Suurimman osan oppimateriaalin koodiesimerkeistä voi ajaa suoraan selaimessa. Niitä voi myös muokata itse ja ajaa uudestaan. 
+
+Esimerkkiohjelmia voi ajaa myös Spyderissä tai muussa Python-kehitysympäristössä:
 - Kopioi esimerkkiohjelman koodi Spyder-editoriin.
 - Aja koodi painamalla Spyderissä vihreää "Run"-painiketta tai F5-nappia.
 
