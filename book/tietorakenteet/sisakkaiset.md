@@ -9,11 +9,10 @@ kernelspec:
   language: python
   name: python3
 ---
-# Sisäkkäiset tietorakenteet
-Pythonin erilaisia tietorakenteita voi käyttää myös sisäkkäin. Jos listoja sisältävä lista kuulostaa erikoiselta, 
-suosittelen vahvasti kokeilemaan alla olevia esimerkkejä Spyderissä ja kokeilemaan niiden muokkausta.
-## Sisäkkäiset listat
-Listan alkio voi olla myös toinen lista:
+# Sisäkkäiset listat
+Pythonin erilaisia tietorakenteita voi käyttää myös sisäkkäin. Tutustutaan ensiksi listoja sisältäviin listoihin.
+
+## Lista, jonka jokainen alkio on toinen lista:
 ```{code-cell} ipython3
 :tags: ["auto-execute-page"]
 # Määritellään lista, jossa kaksi alkiota. Kukin alkio on kolmen alkion lista.
@@ -75,27 +74,8 @@ matriisi = [[2, 4],
 # Tulostetaan 1. rivin 2. alkio (indeksointi nollasta!)        
 print(matriisi[0][1])
 ```
-Käytännössä matriisilaskentaan käytetään kuitenkin *NumPy*-kirjaston *array*-tyyppiä, johon tutustutaan luvusta *NumPy ja Matplotlib* lähtien.
-## Listat sanakirjojen sisällä
-Sanakirjan arvot voivat olla vaikka listoja:
-```{code-cell} ipython3
-yhdisteet = {"C2H6": ["C",  2,  "H", 6],
-             "NaCl": ["Na", 1, "Cl", 1]
-          # indeksi:   0    1    2   3
-            }
-print(yhdisteet["C2H6"])
-print("Yhdisteessa C2H6 on", yhdisteet["C2H6"][3], "vetyatomia")
-```
-## Sisäkkäiset sanakirjat
-Sanakirjoja voi laittaa sisäkkäin:
-```{code-cell} ipython3
-tietokanta = {
-              "C2H6": {"moolimassa": 30.07, "tiheys": 1.36},
-              "NaCl": {"moolimassa": 58.44, "tiheys": 2.16}
-             }
-print("Etaanin tiheys on:", tietokanta["C2H6"]["tiheys"], "g/cm^3")
-print("Ruokasuolan moolimassa on:", tietokanta["NaCl"]["moolimassa"], "g/mol")
-```
+Käytännössä matriisilaskentaan käytetään kuitenkin *NumPy*-kirjaston *array*-tyyppiä, johon tutustutaan luvussa *NumPy ja Matplotlib*.
+
 :::::{card} Tehtävä
 ::::{question}
 :type: multiple-choice
