@@ -36,6 +36,44 @@ teksti = "Sc Ti V Cr Mn Co Fe Ni Cu Zn"
 alkuaineet = teksti.split()
 print(alkuaineet)
 ```
+*str.split*-funktiolla luodun listan voi käydä läpi *for*-silmukalla:
+```{code-cell} ipython3
+def laske_nollat_ja_keskiarvo(teksti):
+    # teksti: merkkijono, joka sisältää välillyönnillä erotettuja kokonaislukuja
+
+    # split-funktio palauttaa listan, jonka alkiot ovat merkkijonoja
+    numerot = teksti.split()
+    # Käydään numerot-lista läpi for-silmukan avulla ja lasketaan keskiarvo
+    summa = 0
+    nollat = 0
+    for alkio in numerot:
+        # Muunnetaan jokainen alkio kokonaisluvuksi ja tarkastetaan, onko se nolla
+        numero = int(alkio)
+        if numero == 0:
+            nollat = nollat + 1
+        else:
+            summa = summa + numero
+
+    print(f"Listassa on {len(numerot)} lukua, joista {nollat} on nollia. Lukujen keskiarvo on {summa / len(numerot):.2f}.")
+
+laske_nollat_ja_keskiarvo("234 5 66 0 0 0 23 99 542 21 53 9 0")
+```
+Toinen esimerkki, missä merkkijono pilkotaan väliaikaiseksi listaksi, josta poimitaan tarpeelliset tiedot:
+```{code-cell} ipython3
+def laske_keskiarvo(arvioinnit):
+    # arvioinnit: lista, jonka alkiot ovat merkkijonona "opiskelijanumero arvosana"    
+    summa = 0    
+    for arviointi in arvioinnit:
+        tiedot = arviointi.split()
+        # tiedot on nyt kahden alkion lista, jonka toinen alkio on arvosana (merkkijonona)
+        # Muunnetaan se kokonaisluvuksi
+        arvosana = int(tiedot[1])
+        summa = summa + arvosana        
+        
+    print(f"Arvosanoja oli {len(arvioinnit)} kpl ja keskiarvo on {summa / len(arvioinnit):.2f}")
+
+laske_keskiarvo(["997731567 4", "997731527 2", "997731589 2", "997731511 5", "997731562 1", "997731447 3"])
+```
 Oletuksena merkkijonosta poimitaan välilyönnillä erotetut alkiot. Tätä voi muuttaa *sep*-parametrillä:
 ```{code-cell} ipython3
 teksti = "4, 21, 53, 12, 7, 0"
