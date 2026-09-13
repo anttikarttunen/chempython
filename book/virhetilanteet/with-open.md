@@ -11,7 +11,7 @@ kernelspec:
 ---
 # Tiedostojen avaaminen with-lausekkeella
 Pythonissa on kätevä **with**-lauseke, joka kutsuu automaattisesti *close*-funktiota kun tiedoston käyttö lopetetaan.
-Luetaan tiedosto [moolimassat.txt](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/virhetilanteet/moolimassat.txt)
+Luetaan tiedosto [moolimassat.txt](./moolimassat.txt)
 käyttäen **with**-lauseketta:
 ```{code-cell} ipython3
 :tags: ["auto-execute-page"]
