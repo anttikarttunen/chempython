@@ -9,6 +9,7 @@ kernelspec:
   language: python
   name: python3
 ---
+Aiemmin tutustuimme sisäkkäisiin listoihin. Myös sanakirjoista voi rakentaa sisäkkäisiä tietorakenteita. Sanakirjoihin voi säilöä esimerkiksi toisia sanakirjoja tai listoja.
 
 ## Sisäkkäiset sanakirjat
 Sanakirjoja voi laittaa sisäkkäin:
