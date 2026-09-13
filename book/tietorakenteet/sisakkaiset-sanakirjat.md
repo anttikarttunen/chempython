@@ -41,65 +41,22 @@ print("Yhdisteessa C2H6 on", yhdisteet["C2H6"][3], "vetyatomia")
 
 Mitä alla oleva ohjelma tulostaa?
 ``` ipython3
-G12 = [["H", "Li", "Na", "K", "Rb", "Cs"]
-       ["Be", "Mg", "Ca", "Sr", "Ba"]]
-print(G12[1])
+hiilivedyt = {
+              "Metaani": {"moolimassa": 16.04, "sulamispiste_C": -182},
+              "Etaani": {"moolimassa": 30.07, "sulamispiste_C": -183},
+              "Propaani": {"moolimassa": 44.10, "sulamispiste_C": -188}
+             }
+print(hiilivedyt["Propaani"]["sulamispiste_C"])
 ```
 ---
-[ ] Li
+[ ] -182
 > Yritä uudelleen!
-[ ] ['H', 'Li', 'Na', 'K', 'Rb', 'Cs']
+[ ] -183
 > Yritä uudelleen!
-[ ] Mg
+[ ] 44.10
 > Yritä uudelleen!
-[x] ['Be', 'Mg', 'Ca', 'Sr', 'Ba']
+[x] -188
 > Oikein!
----
-::::
-::::{question}
-:type: multiple-choice
-:variant: single-select
-:nocaption:
-:columns: 1
-
-Mitä alla oleva ohjelma tulostaa?
-``` ipython3
-G12 = [["H", "Li", "Na", "K", "Rb", "Cs"]
-       ["Be", "Mg", "Ca", "Sr", "Ba"]]
-print(G12[1][1])
-```
----
-[ ] Virheellinen indeksi
-> Yritä uudelleen!
-[ ] [['Li'], ['Mg']]
-> Yritä uudelleen!
-[ ] Li
-> Yritä uudelleen!
-[x] Mg
-> Oikein!
----
-::::
-::::{question}
-:type: multiple-choice
-:variant: single-select
-:nocaption:
-:columns: 1
-
-Mitä alla oleva ohjelma tulostaa?
-``` ipython3
-G12 = [["H", "Li", "Na", "K", "Rb", "Cs"]
-       ["Be", "Mg", "Ca", "Sr", "Ba"]]
-print(G12[0][:3])
- ```
----
-[ ] [['H'], ['Be', 'Mg', 'Ca']]
-> Yritä uudelleen!
-[ ] ['Be', 'Mg', 'Ca']
-> Yritä uudelleen!
-[x] ['H', 'Li', 'Na']
-> Oikein!
-[ ] ['H', 'Li', 'Na', 'K']
-> Yritä uudelleen!
 ---
 ::::
 :::::
