@@ -14,7 +14,7 @@ Suuremmat ohjelmakokonaisuudet on aina parasta jakaa *moduuleiksi*. Moduulien av
 hallinnassa ja moduuleja voi käyttää helposti uudelleen toisissa ohjelmissa.
 
 Käytetään esimerkkinä moduulia *ideaalikaasu*, joka käytännössä olisi siis alla oleva koodi tallennettuna tiedostoon
-[*ideaalikaasu.py*](https://github.com/elina-ruha/CHEM-ohjelmointikurssikirja-test/blob/main/book/funktiot/ideaalikaasu.py):
+[*ideaalikaasu.py*](./ideaalikaasu.py):
 ```
 # Moduuli ideaalikaasu:
 # Apufunktioita ideaalikaasulle
