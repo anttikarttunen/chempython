@@ -14,15 +14,15 @@ kernelspec:
 Aiemmin tutustuimme sisäkkäisiin listoihin. Myös sanakirjoista voi rakentaa sisäkkäisiä tietorakenteita. Sanakirjoihin voi säilöä esimerkiksi toisia sanakirjoja tai listoja.
 
 ## Sanakirja, jonka jokainen arvo on toinen sanakirja
-Tässä esimerkissä sanakirjan avain on yhdisteen kemiallinen kaava ja sanakirjan arvo on toinen sanakirja, joka sisältää yhdisteen moolimassan ja tiheyden.
+Tässä esimerkissä sanakirjan avain on yhdisteen kemiallinen kaava ja sanakirjan arvo on toinen sanakirja, joka sisältää yhdisteen moolimassan ja tiheyden. Huomaa, miten `print`-funktion yhteydessä f-merkkijonossa käytetään yksinkertaisia lainausmerkkejä (') ja sanakirjaan viitattaessa tavallisia lainausmerkkejä ("). Tämä ei ole välttämätöntä, mutta selventää lainausmerkkien hierarkiaa. Lisäksi kurssilla käytettävä CodeRunner-työkalu voi antaa virheilmoituksen, jos tällaisessa koodissa yrittää käyttää vain yhdenlaisia lainausmerkkejä.
 ```{code-cell} ipython3
 :tags: ["auto-execute-page"]
 tietokanta = {
               "C2H6": {"moolimassa": 30.07, "tiheys": 1.36},
               "NaCl": {"moolimassa": 58.44, "tiheys": 2.16}
              }
-print("Etaanin tiheys on:", tietokanta["C2H6"]["tiheys"], "g/cm^3")
-print("Ruokasuolan moolimassa on:", tietokanta["NaCl"]["moolimassa"], "g/mol")
+print(f'Etaanin tiheys on: {tietokanta["C2H6"]["tiheys"]} g/cm^3')
+print(f'Ruokasuolan moolimassa on: {tietokanta["NaCl"]["moolimassa"]} g/mol')
 ```
 
 ## Listat sanakirjojen sisällä
