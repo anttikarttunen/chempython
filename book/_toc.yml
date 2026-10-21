@@ -77,7 +77,6 @@ parts:
       - file: scipy/linalg.md
       - file: scipy/integrate.md
       - file: scipy/scipy-kert.md
-    - file: tekoaly/tekoaly-intro.md
     - file: olio/olio-intro.md
       sections:
       - file: olio/class.md
@@ -86,6 +85,9 @@ parts:
       - file: olio/luokkamuuttujat.md
       - file: olio/str.md
       - file: olio/olio-kert.md
+    - file: tekoaly/tekoaly-intro.md
+      sections:
+      - file: tekoaly/suuret-kielimallit.md
   - caption: Lisämateriaali
     chapters:
     - file: lisamateriaali/spyder-asennus.md
