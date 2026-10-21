@@ -25,7 +25,7 @@ Tämän kurssin esimerkeissä käytämme suuria kielimalleja vain web-käyttöli
 
 :::{admonition} Huomio!
 :class: attention
-Jos käytät mitä tahansa kielimallia web-käyttöliittymän kautta, huomioi, että kielimallille antamasi tiedot päätyvät suurella todennäköisyydellä kielimallin seuraavien versioiden koulutusaineistoksi. Älä siis ikinä syötä verkossa toimiville kielimalleille esimerkiksi **ihmisten henkilötietoja** tai **työnantajan yrityssalaisuuksia**. Jos et halua julkistaa jotain tietoa koko maailmalle, **älä kerro sitä verkossa toimivalle kielimallille**.
+Jos käytät mitä tahansa verkossa pilvipalveluna toimivaa kielimallia, huomioi, että kielimallille antamasi tiedot päätyvät suurella todennäköisyydellä kielimallin seuraavien versioiden koulutusaineistoksi. Älä siis ikinä syötä verkossa toimiville kielimalleille esimerkiksi **ihmisten henkilötietoja** tai **työnantajan yrityssalaisuuksia**. Jos et halua julkistaa jotain tietoa koko maailmalle, **älä kerro sitä verkossa toimivalle kielimallille**.
 :::
 
 :::{admonition} Huomio!
