@@ -26,7 +26,7 @@ Suuntaissärmiö (Kuva: [Wikimedia Commons](https://commons.wikimedia.org/w/inde
 Suuntaissärmiön muotoisen alkeiskopin tilavuus voidaan laskea [kaavalla](https://en.wikipedia.org/wiki/Parallelepiped)
 
 $$
-V=abc \sqrt{1 + 2\cos(\alpha)\cos(\beta)\cos(\gamma) - \cos^2(\alpha)-\cos^2(\beta) - \cos^2(\gamma),
+V=abc \sqrt{1 + 2\cos(\alpha)\cos(\beta)\cos(\gamma) - \cos^2(\alpha)-\cos^2(\beta) - \cos^2(\gamma)},
 $$
 
 missä $a$, $b$ ja $c$ ovat alkeiskopin särmien pituudet ja $\alpha$, $\beta$ ja $\gamma$ ovat särmien väliset kulmat.
@@ -46,9 +46,9 @@ Aalto AI Assistant, valittuna GPT 5.5 -kielimalli (lokakuu 2026).
 
 Pyydetään kielimallia kirjoittamaan meille haluamamme funktio:
 
-```
-Kirjoita Python-funktio, joka laskee kiteisen aineen alkeiskopin tilavuuden. Funktio saa parametreinä yksikkökopin sivujen pituudet a,b,c ja niiden väliset kulmat alpha, beta ja gamma. 
-```
+    Kirjoita Python-funktio, joka laskee kiteisen aineen alkeiskopin tilavuuden. 
+    Funktio saa parametreinä yksikkökopin sivujen pituudet a,b,c ja niiden väliset 
+    kulmat alpha, beta ja gamma. 
 
 Olisimme voineet määritellä ohjeet huomattavasti tarkemminkin, mutta katsotaan, mikä on lopputulos näillä ohjeilla:
 
@@ -90,8 +90,11 @@ def alkeiskopin_tilavuus(a, b, c, alpha, beta, gamma, degrees=True):
 ```
 
 Lisäksi malli antaa esimerkin funktion käytöstä ja kertoo, mitä kaavaa se käytti tilavuuden laskemiseen:
+```{figure} ../figures/esim1.png
+---
+width: 500
+name: aaltoai-esim1
+align: center
+---
+Kuvakaappus mallin tulosteesta (kaavan muotoilu menee pieleen, koska kertomerkit muuttuvat pallukoiksi).
 ```
-V = alkeiskopin_tilavuus(5.0, 6.0, 7.0, 90, 90, 120)
-print(V)
-```
-
