@@ -88,6 +88,7 @@ parts:
     - file: tekoaly/tekoaly-intro.md
       sections:
       - file: tekoaly/suuret-kielimallit.md
+      - file: tekoaly/koodin-generointi.md
   - caption: Lisämateriaali
     chapters:
     - file: lisamateriaali/spyder-asennus.md
