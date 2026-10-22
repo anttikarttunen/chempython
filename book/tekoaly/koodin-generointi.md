@@ -331,6 +331,7 @@ Testit näyttävät melko järkeviltä, mutta kurssin aikana olemme oppineet, et
 Lopputulos on alla. Nyt voit myös ajaa koko koodin selaimessa (tai Spyderissä).
 
 ```{code-cell} ipython3
+:tags: ["auto-execute-page"]
 import math
 
 def alkeiskopin_tilavuus(a, b, c, alpha, beta, gamma):
