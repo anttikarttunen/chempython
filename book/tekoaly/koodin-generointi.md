@@ -12,11 +12,11 @@ kernelspec:
 
 # Koodin generoiminen
 
-Tämän osion esimerkeissä käytetään GPT 5.5 -mallia, joka on lokakuussa 2026 edistynein saatavilla oleva suuri kielimalli [Aalto AI Assistant](https://ai.aalto.fi/) -palvelussa. Palvelu on Aalto-yliopiston opiskelijoiden ja henkilökunnan käytettävissä. Esimerkit toimivat todennäköisesti yhtä hyvin OpenAI:n ChatGPT-palvelussa tai millä tahansa vuoden 2025 jälkeen julkistetulla suurella kielimallilla.
+Tämän osion esimerkeissä käytetään GPT 5.5 -mallia, joka on lokakuussa 2026 edistynein saatavilla oleva suuri kielimalli [Aalto AI Assistant](https://ai.aalto.fi/) -palvelussa. Palvelu on Aalto-yliopiston opiskelijoiden ja henkilökunnan käytettävissä. Esimerkit toimivat todennäköisesti yhtä hyvin OpenAI:n ChatGPT-palvelussa tai millä tahansa vuoden 2025 jälkeen julkistetulla hyvätasoisella kielimallilla.
 
 ## Kiteisen aineen yksikkökopin tilavuuden laskeminen
 
-Pyydetään ensimmäisessä esimerkissä kielimallia kirjoittamaan Python-funktio, joka laskee kiteisen aineen alkeiskopin tilavuuden. Alkeiskoppi on pienin toistuva yksikkö, josta [kiderakenne](https://fi.wikipedia.org/wiki/Kiderakenne) muodostuu. Alkeiskopin synonyyminä käytetään usein yksikkökoppia, mutta ne eivät ole tarkkaan ottaen sama asia (englanniksi kyseessä on käsitteiden *primitive cell* ja *unit cell* ero). Tässä esimerkissä meille kuitenkin riittää tieto, että kaikkien seitsemän kidesysteemin alkeiskoppi on muodoltaan alla olevassa kuvassa esitetty suuntaissärmiö (engl. parallelepiped). 
+Pyydetään ensimmäisessä esimerkissä kielimallia kirjoittamaan Python-funktio, joka laskee kiteisen aineen alkeiskopin tilavuuden. Alkeiskoppi on pienin toistuva yksikkö, josta [kiderakenne](https://fi.wikipedia.org/wiki/Kiderakenne) muodostuu. Alkeiskopin synonyyminä käytetään usein yksikkökoppia, mutta ne eivät ole tarkkaan ottaen sama asia (englanniksi kyseessä on käsitteiden *primitive cell* ja *unit cell* ero). Tässä esimerkissä meille kuitenkin riittää tieto, että kaikkien seitsemän kidesysteemin alkeiskoppi on avaruusgeometrian näkökulmasta suuntaissärmiö (engl. parallelepiped). Esimerkiksi yksinkertaisen kuutiollisen kiteen tapauksessa suuntaissärmiön kulmat ovat 90 astetta ja kaikki särmät ovat yhtä pitkiä. 
 
 ```{figure} ../figures/sarmio.svg
 ---
@@ -99,7 +99,7 @@ width: 700
 name: aaltoai-esim1
 align: center
 ---
-Kuvakaappus mallin tulosteesta (kaavan muotoilu menee pieleen, koska kertomerkit muuttuvat pallukoiksi).
+Kuvakaappaus mallin tulosteesta (kaavan muotoilu menee pieleen, koska kertomerkit muuttuvat pallukoiksi).
 ```
 
 Jos kokeilet esimerkkiä itse, saamasi koodi voi näyttää erilaiselta kuin yllä! Kielimallit ovat tilastollisia malleja, joten samalla komennolla voi saada erilaisen tuloksen. Näin voi käydä varsinkin, jos tehtävänanto on avoimesti määritelty.
@@ -108,7 +108,7 @@ Vastaus voi riippua myös käytetystä kielestä. Jos saat suomen- tai ruotsinki
 
 Funktion ensimmäinen versio näyttää melko asialliselta. Malli lisäsi funktion alkuun dokumentaation funktion tarkoituksesta, parametreistä ja paluuarvosta. Malli käytti tilavuuden laskemiseen oikeaa kaavaa, vaikka emme määritelleet sitä. Yksi merkittävä ongelma tässä ensimmäisessä versiossa on, että funktio ei lainkaan tarkasta, että sille annetut parametrit ovat kelvollisia. Toisaalta emme tätä pyytäneetkään.
 
-Meidän pitää luonnollisesti tarkistaa vielä testeillä, että funktio toimii oikein. Ennen sitä on kuitenkin hyvä  lisää tarkistukset epäfysikaalisten parametrien varalta ja selventää koodia. 
+Meidän pitää luonnollisesti tarkistaa vielä testeillä, että funktio toimii oikein. Ennen sitä on kuitenkin hyvä lisätä tarkistukset epäfysikaalisten parametrien varalta ja selventää koodia. 
 
 ### Toinen versio
 
@@ -185,7 +185,7 @@ def alkeiskopin_tilavuus(a, b, c, alpha, beta, gamma):
 
 ### Kolmas versio
 
-Tiivistetään vielä funktiota. Annetaan seuraava komento samassa keskustelussa (malli muistaa aiemman keskustelun, jos et ole sulkenut keskustelua):
+Tiivistetään vielä funktiota. Annetaan seuraava lisäohje samassa keskustelussa (malli muistaa aiemman keskustelun, jos et ole sulkenut keskustelua):
 
     Älä tarkista kulmien kelvollisuutta funktion alussa. Riittää, kun
     tarkistat, että neliöjuuren sisällä oleva lauseke on suurempi kuin 0.
@@ -236,7 +236,9 @@ def alkeiskopin_tilavuus(a, b, c, alpha, beta, gamma):
     return a * b * c * math.sqrt(lauseke)
 ```
 
-Yhteenvetona voidaan todeta, että tässä esimerkissä käytetty malli GPT 5.5 tuotti asiallisen koodin jo varsin vähäisillä ohjeilla, mutta toisaalta käyttäjän piti ottaa vastuuta ja esimerkiksi vaatia virhetarkastelun lisäämistä. Koodissa oli myös jonkin verran lyhentämisen varaa.
+Yhteenvetona voidaan todeta, että tässä esimerkissä käytetty malli GPT 5.5 tuotti asiallisen ensimmäisen version jo varsin lyhyillä ohjeilla, mutta toisaalta käyttäjän piti ottaa vastuuta ja esimerkiksi vaatia tarkempien ohjeiden avulla virhetarkastelun lisäämistä. 
+
+Koodissa oli myös jonkin verran lyhentämisen varaa. Kielimalleilla on taipumus tuottaa tarpeettoman paljon koodia ja sitä kannattaa lyhentää mahdollisuuksien mukaan. Jokainen generoitu koodirivi lisää kehittämäsi ohjelmiston ylläpidon tarvetta tulevaisuudessa. 
 
 ### Testien generoiminen
 
@@ -404,9 +406,9 @@ Malli sisällytti myös alkuperäisen funktion tulostukseen. Funktion koodi ei m
 
 ### Yhteenveto
 
-Suuret kielimallit kuten GPT 5.5 pystyvät luomaan asiallista ohjelmakoodia. Varsinkin teknistieteellisessä työskentelyssä on tärkeää luoda koodia hallitusti yksi selkeä kokonaisuus kerrallaan. Yksittäisen funktion luominen on tästä hyvä konkreettinen esimerkki. Luotu koodi pitää aina ymmärtää ja tarkistaa testeillä, ettei sinne jää loogisia virheitä, laskuvirheitä tai yksikkövirheitä. Vaikka koodi olisi luotu kielimallilla, koodin luonut ihminen on lopulta vastuussa, jos joku menisi pieleen. Tekoäly-yhtiöt eivät ota vastuuta mallien generoimasta koodista.
+Suuret kielimallit kuten GPT 5.5 pystyvät luomaan asiallista ohjelmakoodia. Teknistieteellisen koodin kehityksessä on tärkeää luoda koodia suunnitellusti yksi selkeä kokonaisuus kerrallaan. Yksittäisen funktion luominen on tästä hyvä konkreettinen esimerkki. Luotu koodi pitää aina ymmärtää ja tarkistaa testeillä, ettei sinne jää loogisia virheitä, laskuvirheitä tai yksikkövirheitä. Vaikka koodi olisi luotu kielimallilla, koodin luonut ihminen on lopulta vastuussa, jos joku menisi pieleen.
 
 :::{admonition} Huomio!
 :class: attention
-Oma ohjelmointiosaaminen on lähtökohta sille, että pystyt  luomaan laadukasta ja toimivaa koodia tekoälyjärjestelmillä. Generoitu koodi on aina testattava huolellisesti ja kattavasti, ettei sinne jää esimerkiksi vääriä yhtälöitä tai laskutoimituksia.
+Oma ohjelmointiosaaminen on lähtökohta sille, että pystyt luomaan laadukasta ja toimivaa koodia tekoälyjärjestelmillä. Generoitu koodi on aina testattava huolellisesti ja kattavasti, ettei sinne jää esimerkiksi vääriä yhtälöitä tai laskutoimituksia.
 :::
