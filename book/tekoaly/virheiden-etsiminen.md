@@ -1,3 +1,14 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
 # Virheiden etsiminen
 
 Jokainen ohjelmoija tekee koodia kirjoittaessaan virheitä. Kielioppivirheet kuten unohtunut sulku tai lainausmerkki on yleensä helppo löytää Python-editorin avustuksella. Usein käy kuitenkin niin, että ohjelma on kieliopillisesti virheetön, mutta toimii silti väärin. Tällaisten ongelmien selvittämiseen voi kulua paljonkin aikaa.
@@ -49,16 +60,16 @@ Kysytään kielimallilta, mikä koodissa voisi olla vialla (Aalto AI Assistant /
 Kielimallin vastaus:
 
     Ongelma on näissä riveissä:	  
-	  plt.xlim = [0, 100]
-	  plt.ylim = [0, 600]
+	plt.xlim = [0, 100]
+	plt.ylim = [0, 600]
 	  
-	  Tässä et kutsu Matplotlibin funktioita, vaan korvaat plt.xlim- ja plt.ylim-funktiot listoilla. 
+	Tässä et kutsu Matplotlibin funktioita, vaan korvaat plt.xlim- ja plt.ylim-funktiot listoilla. 
     Siksi akselien rajat eivät asetu oikein, ja lisäksi myöhemmät plt.xlim(...)-kutsut 
     voivat lakata toimimasta samassa Python-istunnossa.
 	
-	  Käytä sen sijaan funktiokutsua:
-	  plt.xlim(0, 100)
-	  plt.ylim(0, 600)
+	Käytä sen sijaan funktiokutsua:
+	plt.xlim(0, 100)
+	plt.ylim(0, 600)
 	      
 No näinhän ne akselit tosiaan asetettiinkin, olipas päässyt unohtumaan! Lisäksi kielimalli tulostaa valmiiksi korjatun koodin ja oikeasti hyödyllisen ohjeen:
 	
