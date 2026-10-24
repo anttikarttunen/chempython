@@ -90,6 +90,7 @@ parts:
       - file: tekoaly/suuret-kielimallit.md
       - file: tekoaly/koodin-generointi.md
       - file: tekoaly/virheiden-etsiminen.md
+      - file: tekoaly/kielimallit-kuvaajat.md
   - caption: Lisämateriaali
     chapters:
     - file: lisamateriaali/spyder-asennus.md
